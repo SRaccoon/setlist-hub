@@ -1,53 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { getConcerts } from '../services/notionApi';
 import './ConcertList.css';
 
 const ConcertList = () => {
-  const [concerts, setConcerts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchConcerts = async () => {
-      try {
-        setLoading(true);
-        const concertsData = await getConcerts();
-        setConcerts(concertsData);
-      } catch (err) {
-        setError('공연 정보를 불러오는데 실패했습니다.');
-        console.error('공연 정보 가져오기 실패:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchConcerts();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="concert-list">
-        <div className="concerts-container">
-          <div style={{ textAlign: 'center', color: 'white', fontSize: '1.2rem' }}>
-            공연 정보를 불러오는 중...
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="concert-list">
-        <div className="concerts-container">
-          <div style={{ textAlign: 'center', color: 'white', fontSize: '1.2rem' }}>
-            {error}
-          </div>
-        </div>
-      </div>
-    );
-  }
+  // 하드코딩된 데이터로 복원
+  const concerts = [
+    {
+      id: 1,
+      title: "넥슨 밴드 3분기 공연",
+      date: "2025-07-15",
+      venue: "압구정 락교 라이브펍",
+      venueLink: "https://www.nexon.com",
+      image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&h=400&fit=crop&crop=center",
+      description: "넥슨에서 주최하는 특별한 밴드 공연. 3분기 마무리를 위한 특별한 무대를 준비했습니다."
+    },
+    {
+      id: 2,
+      title: "장장 페스티벌",
+      date: "2025-08-30",
+      venue: "신논현 펄스 라이브홀",
+      venueLink: "https://naver.me/G4WoE9X7",
+      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=400&fit=crop&crop=center",
+      description: "기타를 처음 배우기 위해 모인 우리가, 2년이라는 시간을 거쳐 만들어낸 첫 번째 공연."
+    }
+  ];
 
   return (
     <div className="concert-list">
