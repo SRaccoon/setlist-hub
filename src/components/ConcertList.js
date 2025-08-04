@@ -1,27 +1,60 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getConcerts } from '../services/notionApi';
 import './ConcertList.css';
 
 const ConcertList = () => {
-  // 샘플 데이터 (나중에 실제 데이터로 교체)
-  const concerts = [
-    {
-      id: 1,
-      title: "장장 페스티벌",
-      date: "2025-08-30",
-      venue: "신논현 펄스 라이브홀",
-      venueLink: "https://naver.me/G4WoE9X7",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=400&fit=crop&crop=center",
-      description: "기타를 처음 배우기 위해 모인 우리가, 2년이라는 시간을 거쳐 만들어낸 첫 번째 공연."
-    }
-  ];
+  const [concerts, setConcerts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchConcerts = async () => {
+      try {
+        setLoading(true);
+        const concertsData = await getConcerts();
+        setConcerts(concertsData);
+      } catch (err) {
+        setError('공연 정보를 불러오는데 실패했습니다.');
+        console.error('공연 정보 가져오기 실패:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchConcerts();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="concert-list">
+        <div className="concerts-container">
+          <div style={{ textAlign: 'center', color: 'white', fontSize: '1.2rem' }}>
+            공연 정보를 불러오는 중...
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="concert-list">
+        <div className="concerts-container">
+          <div style={{ textAlign: 'center', color: 'white', fontSize: '1.2rem' }}>
+            {error}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="concert-list">
       <div className="concerts-container">
         <div className="concerts-grid">
           {concerts.map((concert) => (
-            <Link to={`/concert/${concert.id}`} key={concert.id} className="concert-card">
+            <Link key={concert.id} to={`/concert/${concert.id}`} className="concert-card">
               <div className="concert-image">
                 <img src={concert.image} alt={concert.title} />
                 <div className="concert-overlay">
