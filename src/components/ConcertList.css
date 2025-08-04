@@ -1,0 +1,194 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+
+.concert-list {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+.concerts-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px 20px 80px;
+}
+
+.concerts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  justify-items: start;
+}
+
+.concert-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+  color: inherit;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.concert-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.concert-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.concert-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.concert-card:hover .concert-image img {
+  transform: scale(1.1);
+}
+
+.concert-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.concert-badge {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.badge-date {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.badge-venue {
+  background: rgba(102, 126, 234, 0.9);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.concert-info {
+  padding: 30px;
+}
+
+.concert-info h3 {
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.concert-description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.concert-meta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.meta-date {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: 500;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.meta-date::before {
+  content: '📅';
+  margin-right: 6px;
+  font-size: 1rem;
+}
+
+.meta-venue-link {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 500;
+  font-family: 'Pretendard', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.meta-venue-link:hover {
+  color: #5a67d8;
+  border-bottom-color: #5a67d8;
+  text-decoration: none;
+}
+
+.meta-venue-link::before {
+  content: '📍';
+  margin-right: 6px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .concerts-container {
+    padding: 80px 15px 60px;
+  }
+  
+  .concerts-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .concert-card {
+    max-width: 100%;
+  }
+  
+  .concert-info {
+    padding: 25px;
+  }
+  
+  .concert-info h3 {
+    font-size: 1.4rem;
+  }
+  
+  .concert-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+} 
