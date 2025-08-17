@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './GigDetail.css';
 
 const GigDetail = () => {
   const { title } = useParams();
+  const [isPosterLightboxOpen, setIsPosterLightboxOpen] = useState(false);
 
   // 페이지 제목을 동적으로 변경
   useEffect(() => {
@@ -13,6 +14,28 @@ const GigDetail = () => {
       document.title = 'Jang Jang Festival';
     }
   }, [title]);
+
+  // 라이트박스 열기/닫기
+  const togglePosterLightbox = () => {
+    setIsPosterLightboxOpen(!isPosterLightboxOpen);
+  };
+
+  // ESC 키로 라이트박스 닫기
+  useEffect(() => {
+    const handleEscKey = (event) => {
+      if (event.key === 'Escape') {
+        setIsPosterLightboxOpen(false);
+      }
+    };
+
+    if (isPosterLightboxOpen) {
+      document.addEventListener('keydown', handleEscKey);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscKey);
+    };
+  }, [isPosterLightboxOpen]);
 
   // 날짜를 요일과 함께 표시하는 함수
   const formatDateWithDay = (dateString) => {
@@ -145,7 +168,13 @@ const GigDetail = () => {
     <div className="gig-detail">
       <div className="gig-header">
         <div className="gig-hero">
-          <img src={gig.image} alt={gig.title} className="gig-hero-image" />
+          <img 
+            src={gig.image} 
+            alt={gig.title} 
+            className="gig-hero-image" 
+            onClick={togglePosterLightbox}
+            style={{ cursor: 'pointer' }}
+          />
           <div className="gig-hero-overlay">
             <h1>
               <span className="letter-j">J</span>
@@ -183,6 +212,18 @@ const GigDetail = () => {
             <p className="gig-description">{gig.description}</p>
           </div>
         </div>
+
+        {/* 포스터 라이트박스 */}
+        {isPosterLightboxOpen && (
+          <div className="poster-lightbox" onClick={togglePosterLightbox}>
+            <div className="poster-lightbox-content">
+              <img src={gig.image} alt={gig.title} className="poster-lightbox-image" />
+              <button className="poster-lightbox-close" onClick={togglePosterLightbox}>
+                ✕
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="teams-section">
