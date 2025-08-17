@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './GigDetail.css';
 
 const GigDetail = () => {
   const { title } = useParams();
+
+  // 페이지 제목을 동적으로 변경
+  useEffect(() => {
+    if (title) {
+      document.title = title;
+    } else {
+      document.title = 'Jang Jang Festival';
+    }
+  }, [title]);
 
   // 날짜를 요일과 함께 표시하는 함수
   const formatDateWithDay = (dateString) => {
