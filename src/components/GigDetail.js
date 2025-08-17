@@ -20,7 +20,7 @@ const GigDetail = () => {
 
   // 하드코딩된 데이터로 복원
   const gigData = {
-    "장장페스티벌": { // URL과 일치하는 키
+    "JangJangFestival": { // URL과 일치하는 키
       id: 2,
       title: "Jang Jang Festival",
       date: "2025-08-30",
