@@ -63,7 +63,7 @@ const GigDetail = () => {
         {
           id: 1,
           name: "학사경고",
-          image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400&h=400&fit=crop&crop=center",
+          image: `${process.env.PUBLIC_URL}/학사경고.png`,
           description: "대학생들의 솔직한 이야기를 담은 록 밴드",
           members: [
             { name: "이다은", role: "보컬", description: "솔직한 가사로 대학생들의 마음을 대변하는 메인 보컬" },
