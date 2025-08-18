@@ -86,7 +86,7 @@ const GigDetail = () => {
         {
           id: 2,
           name: "퇴근인사",
-          image: `${process.env.PUBLIC_URL}/퇴근인사.jpg`,
+          image: `${process.env.PUBLIC_URL}/퇴근인사.png`,
           description: "일상의 아름다움을 노래하는 인디 밴드",
           members: [
             { name: "고현민", role: "보컬", description: "따뜻한 보컬로 일상의 이야기를 전하는 메인 보컬" },
@@ -107,14 +107,15 @@ const GigDetail = () => {
         {
           id: 3,
           name: "적당한 밴드",
-          image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400&h=400&fit=crop&crop=center",
+          image: `${process.env.PUBLIC_URL}/적당한밴드.png`,
           description: "감성적인 멜로디로 마음을 울리는 인디 밴드",
           members: [
             { name: "최윤서", role: "보컬", description: "경쾌한 보컬로 관객을 매료시키는 메인 보컬" },
             { name: "윤주윤", role: "리드기타", description: "신나는 멜로디를 연주하는 기타리스트" },
             { name: "전유섭", role: "리듬기타", description: "즐거운 리듬을 담당하는 기타리스트" },
             { name: "서가인", role: "베이스", description: "즐거운 리듬을 담당하는 베이시스트" },
-            { name: "이병학", role: "드럼", description: "경쾌한 비트로 분위기를 고조시키는 드러머" }
+            { name: "이병학", role: "드럼", description: "경쾌한 비트로 분위기를 고조시키는 드러머" },
+            { name: "정유일", role: "건반", description: "분위기를 더하는 키보디스트" }
           ],
           setlist: [
             { title: "한로로 - 비틀비틀 짝짜꿍", youtube: "https://youtu.be/51iYti71tos?si=8ZObzqIAZkfoYF93" },
