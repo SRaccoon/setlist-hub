@@ -175,13 +175,13 @@
 .teams-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 950px;
+  grid-template-rows: none;
   gap: 10px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .team-card {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(20, 20, 25, 0.95);
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
@@ -203,6 +203,8 @@
   aspect-ratio: 1 / 1;
   overflow: hidden;
   flex-shrink: 0;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .team-image img {
@@ -217,6 +219,7 @@
   display: block;
   margin: 0;
   padding: 0;
+  border-radius: 20px;
 }
 
 .team-card:hover .team-image img {
