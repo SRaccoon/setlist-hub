@@ -58,7 +58,7 @@ const GigDetail = () => {
       date: "2025-08-30",
       venue: "신논현 펄스 라이브홀",
       image: process.env.PUBLIC_URL + "/poster.png",
-      description: "기타를 처음 배우기 위해 모인 우리가, 2년이라는 시간을 거쳐 만들어낸 첫 번째 공연.",
+      description: "기타를 처음 배우기 위해 모인 우리가, 2년이라는 시간을 거쳐 만들어낸 첫 번째 공연",
       teams: [
         {
           id: 1,
@@ -87,7 +87,7 @@ const GigDetail = () => {
           id: 2,
           name: "퇴근인사",
           image: `${process.env.PUBLIC_URL}/퇴근인사.png`,
-          description: "일상의 아름다움을 노래하는 인디 밴드",
+          description: "하루의 마침표가 우리의 첫 소절이 되는 시간, 그 설렘을 연주하는 '퇴근인사'입니다",
           members: [
             { name: "고현민", role: "보컬", description: "따뜻한 보컬로 일상의 이야기를 전하는 메인 보컬" },
             { name: "심정현", role: "리드기타", description: "감성적인 멜로디를 연주하는 리드 기타리스트" },
