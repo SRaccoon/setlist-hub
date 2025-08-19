@@ -86,7 +86,7 @@ const GigDetail = () => {
         {
           id: 2,
           name: "퇴근인사",
-          image: `${process.env.PUBLIC_URL}/퇴근인사.png`,
+          image: `${process.env.PUBLIC_URL}/퇴근인사2.png`,
           description: "하루의 마침표가 우리의 첫 소절이 되는 시간, 그 설렘을 연주하는 '퇴근인사'입니다",
           members: [
             { name: "고현민", role: "보컬", description: "따뜻한 보컬로 일상의 이야기를 전하는 메인 보컬" },

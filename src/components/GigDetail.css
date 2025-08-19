@@ -200,7 +200,7 @@
 
 .team-image {
   width: 100%;
-  height: 250px;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -590,7 +590,8 @@
   
   .teams-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-rows: none;
+    gap: 30px;
   }
   
   .teams-section {
@@ -626,5 +627,13 @@
   
   .member-role {
     align-self: flex-start;
+  }
+  
+  .team-card {
+    height: auto;
+  }
+  
+  .team-image {
+    aspect-ratio: 1 / 1;
   }
 } 
