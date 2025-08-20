@@ -55,7 +55,7 @@ const GigDetail = () => {
     "JangJangFestival": { // URL과 일치하는 키
       id: 2,
       title: "Jang Jang Festival",
-      date: "2025-08-30",
+      date: "2025-08-30 18:00 ~ 20:30",
       venue: "신논현 펄스 라이브홀",
       image: process.env.PUBLIC_URL + "/poster.png",
       description: "기타를 처음 배우기 위해 모인 우리가, 2년이라는 시간을 거쳐 만들어낸 첫 번째 공연",
