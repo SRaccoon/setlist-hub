@@ -64,7 +64,7 @@ const GigDetail = () => {
           id: 1,
           name: "학사경고",
           image: `${process.env.PUBLIC_URL}/학사경고.png`,
-          description: "대학생들의 솔직한 이야기를 담은 록 밴드",
+          description: "다른 밴드들이 사회의 쓴맛을 노래할 때, 우린 아직 학식의 쓴맛을 노래한다.",
           members: [
             { name: "이다은", role: "보컬", description: "솔직한 가사로 대학생들의 마음을 대변하는 메인 보컬" },
             { name: "손동우", role: "리드기타", description: "강렬한 기타 리프로 무대를 지배하는 기타리스트" },
