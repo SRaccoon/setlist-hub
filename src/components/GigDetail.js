@@ -108,7 +108,7 @@ const GigDetail = () => {
           id: 3,
           name: "적당한 밴드",
           image: `${process.env.PUBLIC_URL}/적당한밴드.png`,
-          description: "감성적인 멜로디로 마음을 울리는 인디 밴드",
+          description: "딱 좋은 온도, 적당한 밴드",
           members: [
             { name: "최윤서", role: "보컬", description: "경쾌한 보컬로 관객을 매료시키는 메인 보컬" },
             { name: "윤주윤", role: "리드기타", description: "신나는 멜로디를 연주하는 기타리스트" },
