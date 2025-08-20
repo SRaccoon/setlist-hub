@@ -39,7 +39,15 @@ const GigDetail = () => {
 
   // 날짜를 요일과 함께 표시하는 함수
   const formatDateWithDay = (dateString) => {
-    const date = new Date(dateString);
+    // 시간 정보가 포함된 경우 날짜 부분만 추출
+    const dateOnly = dateString.split(' ')[0]; // "2025-08-30 18:00 ~ 20:30" -> "2025-08-30"
+    const date = new Date(dateOnly);
+    
+    // 유효한 날짜인지 확인
+    if (isNaN(date.getTime())) {
+      return dateString; // 파싱 실패시 원본 문자열 반환
+    }
+    
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
@@ -47,7 +55,10 @@ const GigDetail = () => {
     const days = ['일', '월', '화', '수', '목', '금', '토'];
     const dayOfWeek = days[date.getDay()];
     
-    return `${year}-${month}-${day} (${dayOfWeek})`;
+    // 시간 정보가 있으면 함께 표시
+    const timeInfo = dateString.includes(' ') ? dateString.substring(dateString.indexOf(' ')) : '';
+    
+    return `${year}-${month}-${day} (${dayOfWeek})${timeInfo}`;
   };
 
   // 하드코딩된 데이터로 복원
