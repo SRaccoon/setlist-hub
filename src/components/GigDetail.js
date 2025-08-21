@@ -69,7 +69,7 @@ const GigDetail = () => {
       date: "2025-08-30 18:00 ~ 20:30",
       venue: "신논현 펄스 라이브홀",
       image: process.env.PUBLIC_URL + "/poster.png",
-      description: "기타를 처음 배우기 위해 모인 우리가, 2년이라는 시간을 거쳐 만들어낸 첫 번째 공연",
+      description: "이 무대의 주제는 단 하나: 재밌으면 됐다!",
       teams: [
         {
           id: 1,
@@ -189,24 +189,28 @@ const GigDetail = () => {
           />
           <div className="gig-hero-overlay">
             <h1>
-              <span className="letter-j">J</span>
-              <span className="letter-a">A</span>
-              <span className="letter-n">N</span>
-              <span className="letter-g">G</span>
-              {' '}
-              <span className="letter-j">J</span>
-              <span className="letter-a">A</span>
-              <span className="letter-n">N</span>
-              <span className="letter-g">G</span>
-              {' '}
-              <span className="letter-f">F</span>
-              <span className="letter-e">E</span>
-              <span className="letter-s">S</span>
-              <span className="letter-t">T</span>
-              <span className="letter-i">I</span>
-              <span className="letter-v">V</span>
-              <span className="letter-a">A</span>
-              <span className="letter-l">L</span>
+              <span className="first-line">
+                <span className="letter-j">J</span>
+                <span className="letter-a">A</span>
+                <span className="letter-n">N</span>
+                <span className="letter-g">G</span>
+                {' '}
+                <span className="letter-j">J</span>
+                <span className="letter-a">A</span>
+                <span className="letter-n">N</span>
+                <span className="letter-g">G</span>
+              </span>
+              <br className="mobile-break" />
+              <span className="second-line">
+                <span className="letter-f">F</span>
+                <span className="letter-e">E</span>
+                <span className="letter-s">S</span>
+                <span className="letter-t">T</span>
+                <span className="letter-i">I</span>
+                <span className="letter-v">V</span>
+                <span className="letter-a">A</span>
+                <span className="letter-l">L</span>
+              </span>
             </h1>
             <p className="gig-date">{formatDateWithDay(gig.date)}</p>
             <p className="gig-venue">

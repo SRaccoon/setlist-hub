@@ -107,6 +107,15 @@
   position: relative;
 }
 
+/* 데스크톱에서는 한 줄로 표시 */
+.mobile-break {
+  display: none;
+}
+
+.first-line, .second-line {
+  display: inline;
+}
+
 .gig-hero-overlay .gig-date {
   font-size: 1.3rem;
   margin: 8px auto;
@@ -589,6 +598,15 @@
   
   .gig-hero-overlay h1 {
     font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .mobile-break {
+    display: block;
+  }
+  
+  .first-line, .second-line {
+    display: block;
   }
   
   .teams-grid {
