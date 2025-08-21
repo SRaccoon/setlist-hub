@@ -63,7 +63,7 @@ const GigDetail = () => {
 
   // 하드코딩된 데이터로 복원
   const gigData = {
-    "JangJangFestival": { // URL과 일치하는 키
+    "jangjangfestival": { // URL과 일치하는 키 (소문자로 통일)
       id: 2,
       title: "Jang Jang Festival",
       date: "2025-08-30 18:00 ~ 20:30",
@@ -163,7 +163,12 @@ const GigDetail = () => {
     }
   };
 
-  const gig = gigData[title];
+  // URL 파라미터를 디코딩하고 소문자로 변환해서 처리 (대소문자 구분 없이 접근 가능)
+  const decodedTitle = title ? decodeURIComponent(title) : '';
+  console.log('Original title:', title);
+  console.log('Decoded title:', decodedTitle);
+  console.log('Lowercase title:', decodedTitle?.toLowerCase());
+  const gig = gigData[decodedTitle?.toLowerCase()];
 
   if (!gig) {
     return (
@@ -194,12 +199,13 @@ const GigDetail = () => {
                 <span className="letter-a">A</span>
                 <span className="letter-n">N</span>
                 <span className="letter-g">G</span>
-                {' '}
+                <span className="desktop-space">&nbsp;</span>
                 <span className="letter-j">J</span>
                 <span className="letter-a">A</span>
                 <span className="letter-n">N</span>
                 <span className="letter-g">G</span>
               </span>
+              <span className="desktop-space">&nbsp;</span>
               <br className="mobile-break" />
               <span className="second-line">
                 <span className="letter-f">F</span>

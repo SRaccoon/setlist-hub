@@ -112,6 +112,11 @@
   display: none;
 }
 
+.desktop-space {
+  display: inline;
+  white-space: pre;
+}
+
 .first-line, .second-line {
   display: inline;
 }
@@ -603,6 +608,10 @@
   
   .mobile-break {
     display: block;
+  }
+  
+  .desktop-space {
+    display: none;
   }
   
   .first-line, .second-line {
