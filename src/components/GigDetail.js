@@ -69,7 +69,7 @@ const GigDetail = () => {
       date: "2025-08-30 18:00 ~ 20:30",
       venue: "신논현 펄스 라이브홀",
       image: process.env.PUBLIC_URL + "/poster.png",
-      description: "이 무대의 주제는 단 하나: 재밌으면 됐다!",
+      description: "이 공연의 주제는 단 하나, 재밌으면 됐다!",
       teams: [
         {
           id: 1,
@@ -77,12 +77,12 @@ const GigDetail = () => {
           image: `${process.env.PUBLIC_URL}/학사경고.png`,
           description: "다른 밴드들이 사회의 쓴맛을 노래할 때, 우린 아직 학식의 쓴맛을 노래한다.",
           members: [
-            { name: "이다은", role: "보컬", description: "솔직한 가사로 대학생들의 마음을 대변하는 메인 보컬" },
-            { name: "손동우", role: "리드기타", description: "강렬한 기타 리프로 무대를 지배하는 기타리스트" },
-            { name: "박수연", role: "리듬기타", description: "안정적인 리듬으로 밴드의 기반을 다지는 기타리스트" },
-            { name: "한지우", role: "베이스", description: "안정적인 리듬으로 밴드의 기반을 다지는 베이시스트" },
-            { name: "김지원", role: "드럼", description: "폭발적인 비트로 관객을 매료시키는 드러머" },
-            { name: "한이연", role: "건반", description: "분위기를 더하는 키보디스트" }
+            { name: "이다은", role: "보컬" },
+            { name: "손동우", role: "리드기타" },
+            { name: "박수연", role: "리듬기타" },
+            { name: "한지우", role: "베이스" },
+            { name: "김지원", role: "드럼" },
+            { name: "한이연", role: "건반" }
           ],
           setlist: [
             { title: "이츠 - 청록", youtube: "https://youtu.be/9WPBI2hhmLM?si=ts5kCnD7RwokXZWf" },
@@ -100,11 +100,11 @@ const GigDetail = () => {
           image: `${process.env.PUBLIC_URL}/퇴근인사2.png`,
           description: "하루의 마침표가 우리의 첫 소절이 되는 시간, 그 설렘을 연주하는 '퇴근인사'입니다",
           members: [
-            { name: "고현민", role: "보컬", description: "따뜻한 보컬로 일상의 이야기를 전하는 메인 보컬" },
-            { name: "심정현", role: "리드기타", description: "감성적인 멜로디를 연주하는 리드 기타리스트" },
-            { name: "김영세", role: "리듬기타", description: "안정적인 리듬을 담당하는 리듬 기타리스트" },
-            { name: "최예지", role: "베이스", description: "부드러운 저음으로 밴드의 기반을 다지는 베이시스트" },
-            { name: "유경", role: "드럼", description: "절제된 비트로 분위기를 조성하는 드러머" }
+            { name: "고현민", role: "보컬" },
+            { name: "심정현", role: "리드기타" },
+            { name: "김영세", role: "리듬기타" },
+            { name: "최예지", role: "베이스" },
+            { name: "유경", role: "드럼" }
           ],
           setlist: [
             { title: "쏜애플 - 시퍼런봄", youtube: "https://youtu.be/8i-B1ieI_kY?si=HX-p2R7-sOy6KAlz" },
@@ -121,12 +121,12 @@ const GigDetail = () => {
           image: `${process.env.PUBLIC_URL}/적당한밴드.png`,
           description: "딱 좋은 온도, 적당한 밴드",
           members: [
-            { name: "최윤서", role: "보컬", description: "경쾌한 보컬로 관객을 매료시키는 메인 보컬" },
-            { name: "윤주윤", role: "리드기타", description: "신나는 멜로디를 연주하는 기타리스트" },
-            { name: "전유섭", role: "리듬기타", description: "즐거운 리듬을 담당하는 기타리스트" },
-            { name: "서가인", role: "베이스", description: "즐거운 리듬을 담당하는 베이시스트" },
-            { name: "이병학", role: "드럼", description: "경쾌한 비트로 분위기를 고조시키는 드러머" },
-            { name: "정유일", role: "건반", description: "분위기를 더하는 키보디스트" }
+            { name: "최윤서", role: "보컬" },
+            { name: "윤주윤", role: "리드기타" },
+            { name: "전유섭", role: "리듬기타" },
+            { name: "서가인", role: "베이스" },
+            { name: "이병학", role: "드럼" },
+            { name: "정유일", role: "건반" }
           ],
           setlist: [
             { title: "한로로 - 비틀비틀 짝짜꿍", youtube: "https://youtu.be/51iYti71tos?si=8ZObzqIAZkfoYF93" },
@@ -143,11 +143,11 @@ const GigDetail = () => {
           image:  process.env.PUBLIC_URL + "/ycs.png",
           description: "고등학생부터 직장인까지, 서로 다른 일상을 노래하는 밴드 옐치썬",
           members: [
-            { name: "황주현", role: "보컬", description: "따뜻한 보컬로 일상의 이야기를 전하는 메인 보컬" },
-            { name: "김근희", role: "리드기타", description: "감성적인 멜로디를 연주하는 리드 기타리스트" },
-            { name: "임태연", role: "리듬기타", description: "안정적인 리듬을 담당하는 리듬 기타리스트" },
-            { name: "김지민", role: "베이스", description: "부드러운 저음으로 밴드의 기반을 다지는 베이시스트" },
-            { name: "하승모", role: "드럼", description: "절제된 비트로 분위기를 조성하는 드러머" }
+            { name: "황주현", role: "보컬" },
+            { name: "임태연", role: "리드기타" },
+            { name: "김근희", role: "리듬기타" },
+            { name: "김지민", role: "베이스" },
+            { name: "하승모", role: "드럼" }
           ],
           setlist: [
             { title: "더 폴스 - Find Me!", youtube: "https://youtu.be/4ncJf4uaqP4?si=UhSTwZH72ZtkXHJL" },
