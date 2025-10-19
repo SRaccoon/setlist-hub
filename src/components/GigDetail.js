@@ -167,7 +167,7 @@ const GigDetail = () => {
       date: "2025-10-25 18:00 ~ 20:00",
       venue: "스페이스한강",
       image: process.env.PUBLIC_URL + "/temperature.png",
-      description: "성급히 찾아온 겨울밤을 녹일, 우리만의 온도",
+      description: "성급히 찾아온 겨울밤을 녹일 우리만의 온도",
       teams: [
         {
           id: 1,
