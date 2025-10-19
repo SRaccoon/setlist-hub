@@ -205,11 +205,12 @@
 }
 
 /* TEMPERATURE 공연의 경우 세 팀을 가운데 정렬 */
-.teams-grid.temperature-teams {
+.teams-grid {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: none;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-rows: none;
+  gap: 10px;
+  align-items: start;
 }
 
 .team-card {
