@@ -92,6 +92,16 @@
 .gig-hero-overlay h1 .letter-v { color: #FF0000; } /* Vibrant red */
 .gig-hero-overlay h1 .letter-l { color: #FF69B4; } /* Bright pink/magenta */
 
+/* 온도 공연 제목 스타일 - 빨강-주황 그라데이션 */
+.gig-hero-overlay h1.temperature-title {
+  background: linear-gradient(45deg, #FF0000, #FF4500, #FF8C00, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
+
 .gig-hero-overlay h1 span {
   text-shadow: 
     2px 2px 0 #fff,
@@ -192,6 +202,14 @@
   grid-template-rows: none;
   gap: 10px;
   align-items: start;
+}
+
+/* TEMPERATURE 공연의 경우 세 팀을 가운데 정렬 */
+.teams-grid.temperature-teams {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .team-card {

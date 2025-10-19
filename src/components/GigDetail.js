@@ -160,6 +160,95 @@ const GigDetail = () => {
         }
         
       ]
+    },
+    "temperature": { // 새로운 공연
+      id: 3,
+      title: "TEMPERATURE",
+      date: "2025-10-25 18:00 ~ 20:00",
+      venue: "스페이스한강",
+      image: process.env.PUBLIC_URL + "/temperature.png",
+      description: "성급히 찾아온 겨울밤을 녹일, 우리만의 온도",
+      teams: [
+        {
+          id: 1,
+          name: "주승오밴드",
+          image: `${process.env.PUBLIC_URL}/주승오밴드.png`,
+          description: "밴드 리도어의 음악에 이끌려 결성된 커버밴드 주승오밴드 입니다.",
+          members: [
+            { name: "오승주", role: "보컬" },
+            { name: "심정현", role: "리드기타" },
+            { name: "김태일", role: "리듬기타" },
+            { name: "최예지", role: "베이스" },
+            { name: "김민형", role: "드럼" },
+            { name: "이희연", role: "건반" }
+          ],
+          setlist: [
+            { title: "리도어 - 사랑의 미학", youtube: "https://youtu.be/3VlqlntAOt8?si=nJCqfFpXhzTjFQqc" },
+            { title: "리도어 - 내 방안은 푸른바다", youtube: "https://youtu.be/E1i-J_4huZg?si=HzpCd9G23ZwEc98_" },
+            { title: "리도어 - 아직도 사랑하면 안되는 건가요", youtube: "https://youtu.be/avo8_7QSXrQ?si=qvbn_RldX1devP89" },
+            { title: "리도어 - 욕망주사기", youtube: "https://youtu.be/uVs0tqOck7k?si=k8LxO0lGCu_M9GlF" },
+            { title: "혁오 - Tomboy", youtube: "https://youtu.be/w3-AKITQMi0?si=E-DGA6idBlQbc6Ea" },
+            { title: "", youtube: "" }
+          ]
+        },
+        {
+          id: 2,
+          name: "전갱이",
+          image: `${process.env.PUBLIC_URL}/전갱이.png`,
+          description: "살아있을 때 손질하지 않으면 못 먹는 전갱이처럼 신선하고 날 것 그대로의 진정성 있는 음악을 보여주는 밴드입니다.",
+          members: [
+            { name: "양나빈", role: "보컬" },
+            { name: "이민엽", role: "리드기타" },
+            { name: "정윤서", role: "리듬기타" },
+            { name: "강주형", role: "베이스" },
+            { name: "유신우", role: "드럼" },
+            { name: "최태욱", role: "건반" }
+          ],
+          /**
+           *  Olivia Dean	Dive	https://youtu.be/NM4e606yFJg?si=sZ6A_xID--g_0n33
+              백예린	Square	https://youtu.be/4iFP_wd6QU8?si=rjFqU9yzIqJAh9z1
+              라쿠나	Far Away	https://youtu.be/G1tzltj-igE?si=l4IvMXOQ5OKZiVaQ
+              유다빈 밴드	LETTER	https://youtu.be/-dxS4aYJi00?si=lGgzcVrRWz_g7xlu
+           */
+          setlist: [
+            { title: "Olivia Dean - Dive", youtube: "https://youtu.be/NM4e606yFJg?si=sZ6A_xID--g_0n33" },
+            { title: "백예린 - Square", youtube: "https://youtu.be/4iFP_wd6QU8?si=rjFqU9yzIqJAh9z1" },
+            { title: "라쿠나 - Far Away", youtube: "https://youtu.be/G1tzltj-igE?si=l4IvMXOQ5OKZiVaQ" },
+            { title: "유다빈 밴드 - LETTER", youtube: "https://youtu.be/-dxS4aYJi00?si=lGgzcVrRWz_g7xlu" },
+            { title: "", youtube: "" },
+            { title: "", youtube: "" }
+          ]
+        },
+        {
+          id: 3,
+          name: "큰나무",
+          image: `${process.env.PUBLIC_URL}/큰나무.png`,
+          description: "큰나무는 중학교 동창 다섯 명이 함께 결성한 밴드입니다. 학창시절 자주 만나던 장소 '큰나무'에서 이름을 따와, 그때의 추억과 우정을 음악으로 이어가고 있습니다. 계속 자라나는 나무처럼 꾸준히 함께 성장하고 싶은 밴드입니다.",
+          members: [
+            { name: "김태일", role: "보컬/리듬기타" },
+            { name: "최성은", role: "리드기타" },
+            { name: "박종현", role: "베이스" },
+            { name: "이승훈", role: "드럼" },
+            { name: "김호걸", role: "건반" }
+          ],
+          /**
+           * 너드커넥션	Back in time	https://youtu.be/iMvXvXK0MAQ?si=fpYk7ChIf4D1K9xc
+              웨이브투어스	사랑으로	https://youtu.be/L7cAqBQVjYI?si=-satNMmCBCNS_XZq
+              전기뱀장어	미로 	https://youtu.be/VcBBvkC_OIc?si=kjNDRghb8Kltc3u3
+              검정치마	Antifreeze	https://youtu.be/PGADim6UzHE?si=Bi-ojd3pVlcuKtbP
+              델리스파이스	고백	https://youtu.be/F0aPN-ZiZlA?si=emIG_H4OdU2eM8gE
+              나상현씨밴드	찬란	https://youtu.be/S-yABpcMaQs?si=BLSGqVavXWu5gpAo
+           */
+          setlist: [
+            { title: "너드커넥션 - Back in time", youtube: "https://youtu.be/iMvXvXK0MAQ?si=fpYk7ChIf4D1K9xc" },
+            { title: "웨이브투어스 - 사랑으로", youtube: "https://youtu.be/L7cAqBQVjYI?si=-satNMmCBCNS_XZq" },
+            { title: "전기뱀장어 - 미로", youtube: "https://youtu.be/VcBBvkC_OIc?si=kjNDRghb8Kltc3u3" },
+            { title: "검정치마 - Antifreeze", youtube: "https://youtu.be/PGADim6UzHE?si=Bi-ojd3pVlcuKtbP" },
+            { title: "델리스파이스 - 고백", youtube: "https://youtu.be/F0aPN-ZiZlA?si=emIG_H4OdU2eM8gE" },
+            { title: "나상현씨밴드 - 찬란", youtube: "https://youtu.be/S-yABpcMaQs?si=BLSGqVavXWu5gpAo" },
+          ]
+        }
+      ]
     }
   };
 
@@ -193,36 +282,42 @@ const GigDetail = () => {
             style={{ cursor: 'pointer' }}
           />
           <div className="gig-hero-overlay">
-            <h1>
-              <span className="first-line">
-                <span className="letter-j">J</span>
-                <span className="letter-a">A</span>
-                <span className="letter-n">N</span>
-                <span className="letter-g">G</span>
-                <span className="desktop-space">&nbsp;</span>
-                <span className="letter-j">J</span>
-                <span className="letter-a">A</span>
-                <span className="letter-n">N</span>
-                <span className="letter-g">G</span>
-              </span>
-              <span className="desktop-space">&nbsp;</span>
-              <br className="mobile-break" />
-              <span className="second-line">
-                <span className="letter-f">F</span>
-                <span className="letter-e">E</span>
-                <span className="letter-s">S</span>
-                <span className="letter-t">T</span>
-                <span className="letter-i">I</span>
-                <span className="letter-v">V</span>
-                <span className="letter-a">A</span>
-                <span className="letter-l">L</span>
-              </span>
+            <h1 className={gig.title === "TEMPERATURE" ? "temperature-title" : ""}>
+              {gig.title === "TEMPERATURE" ? (
+                gig.title
+              ) : (
+                <>
+                  <span className="first-line">
+                    <span className="letter-j">J</span>
+                    <span className="letter-a">A</span>
+                    <span className="letter-n">N</span>
+                    <span className="letter-g">G</span>
+                    <span className="desktop-space">&nbsp;</span>
+                    <span className="letter-j">J</span>
+                    <span className="letter-a">A</span>
+                    <span className="letter-n">N</span>
+                    <span className="letter-g">G</span>
+                  </span>
+                  <span className="desktop-space">&nbsp;</span>
+                  <br className="mobile-break" />
+                  <span className="second-line">
+                    <span className="letter-f">F</span>
+                    <span className="letter-e">E</span>
+                    <span className="letter-s">S</span>
+                    <span className="letter-t">T</span>
+                    <span className="letter-i">I</span>
+                    <span className="letter-v">V</span>
+                    <span className="letter-a">A</span>
+                    <span className="letter-l">L</span>
+                  </span>
+                </>
+              )}
             </h1>
             <p className="gig-date">{formatDateWithDay(gig.date)}</p>
             <p className="gig-venue">
               {gig.venue}
               <a 
-                href="https://naver.me/G4WoE9X7" 
+                href={gig.title === "TEMPERATURE" ? "https://naver.me/GpCzTDlp" : "https://naver.me/G4WoE9X7"}
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="venue-link"
@@ -249,7 +344,7 @@ const GigDetail = () => {
       </div>
 
       <div className="teams-section">
-        <div className="teams-grid">
+        <div className={`teams-grid ${gig.title === "TEMPERATURE" ? "temperature-teams" : ""}`}>
           {gig.teams.map((team, index) => (
             <div key={team.id} className={`team-card team-${index + 1}`}>
                 <div className="team-image">

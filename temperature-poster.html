@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature Poster</title>
+  <meta name="viewport" content="width=1400, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0; padding: 0;
+      background: #111;
+      min-height: 100vh; width:100%;
+    }
+    body {
+      display: flex; align-items: center; justify-content: center; min-height: 100vh;
+      width: 100vw;
+    }
+    .poster {
+      position: relative;
+      width: 1400px; height: 1980px; /* A3 비율 */
+      background: url('./temperature_img.png') center/cover no-repeat;
+      overflow: hidden;
+      box-shadow: 0 8px 70px rgba(0,0,0,.35);
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .dim-top {
+      position: absolute; top: 0; left: 0; right: 0; height: 45%;
+      background: linear-gradient(to bottom,rgba(23,23,23,0.54) 66%,transparent 100%);
+      z-index: 1;
+    }
+    .dim-bottom {
+      position: absolute; left: 0; right: 0; bottom: 0; height: 42%;
+      background: linear-gradient(to top,rgba(0,0,0,.8) 88%,transparent 100%);
+      z-index: 1;
+    }
+    .title {
+      margin-top: 190px;
+      font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+      font-size: 6.6rem; font-weight: 500; font-style: italic;
+      color: rgba(255,230,158,0.91);
+      letter-spacing: 0.12em;
+      text-align: center;
+      position: relative; z-index: 2;
+      text-shadow: 0 8px 60px rgba(255,225,122,0.38), 0 0 2px #fff, 0px 5px 9px rgba(0,0,0,0.08);
+      filter: blur(.21px);
+    }
+    .subtitle {
+      margin: 85px 0 0 0;
+      font-family: 'Noto Sans KR', sans-serif; font-size: 3.3rem;
+      font-weight: 300; color: rgba(255,221,143,0.83);
+      letter-spacing: 0.03em;
+      line-height: 1.46;
+      text-align: center;
+      text-shadow: 0 4.5px 24px rgba(255,221,143,.27), 0 0 3px #fff;
+      position: relative; z-index: 2;
+      filter: blur(.19px);
+    }
+    .info {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 3.6rem; font-weight: 400;
+      color: rgba(255,230,140,0.89);
+      text-shadow: 0px 8px 32px rgba(174,112,9,0.22),0 0 16px #eedc9f;
+      padding: 42px 0 22px; text-align: center;
+      z-index:2; position: relative; line-height: 1.46; letter-spacing: 0.014em;
+    }
+    .line {
+      display: inline-block; margin: 0 8px;
+      color: #dcaa73; font-size: 3.3rem; opacity:.7;
+      vertical-align: middle;
+    }
+    .bands {
+      margin-bottom: 65px; z-index:2; position:relative; text-align: center;
+    }
+    .band-name {
+      font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+      display: inline-block;
+      color: rgba(252,191,108,0.8);
+      text-shadow: 0 0 17px rgba(75, 45, 1, 0.10), 0 4px 27px #ffefbb;
+      font-size: 2.78rem;
+      letter-spacing: 0.028em; font-weight: 500;
+      margin: 0 28px 8px 28px;
+      padding: 7px 34px 4px 34px; border-radius: 16px;
+      background: rgba(38, 17, 0, 0.054);
+      opacity:0.95;
+    }
+    @media (max-width: 900px) {
+      .poster { width: 95vw; height: 67.5vw; min-height:600px; min-width:320px;}
+      .title{font-size:3.2vw; margin-top:8vw;}
+      .subtitle{font-size:1.7vw; margin-top:3vw;}
+      .info{font-size:1.5vw;}
+      .bands{margin-bottom:2vw;}
+      .band-name{font-size:1.1vw; margin:0 0.6vw 1vw 0.6vw;}
+      .line{font-size:1.2vw;}
+    }
+    @media print {
+      html,body{background:#fff;}
+      .poster{box-shadow: none;}
+      .poster {
+        background: url('./temperature_img.png') center/cover no-repeat !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="dim-top"></div>
+    <div class="dim-bottom"></div>
+    <div>
+      <div class="title">TEMPERATURE</div>
+      <div class="subtitle">성급히 찾아온 겨울밤을 녹일, 우리만의 온도</div>
+    </div>
+    <div>
+      <div class="info">
+        2025. 10. 25 (토) 18:00<span class="line">┃</span>스페이스한강
+      </div>
+      <div class="bands">
+        <span class="band-name">주승오밴드</span>
+        <span class="band-name">전갱이</span>
+        <span class="band-name">큰나무</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
