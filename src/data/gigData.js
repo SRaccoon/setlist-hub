@@ -249,7 +249,7 @@ const gigData = {
       {
         id: 4,
         name: "아지캉플젝",
-        image: `${process.env.PUBLIC_URL}/team-akfg.svg`,
+        image: `${process.env.PUBLIC_URL}/team-akfg.png`,
         description: "아시안 쿵푸 제너레이션을 향한 순수한 덕심으로 뭉친 커버 프로젝트",
         members: [
           { name: "양지민", role: "보컬" },
