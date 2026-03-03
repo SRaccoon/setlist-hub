@@ -259,7 +259,7 @@ const gigData = {
           { name: "이수진", role: "드럼" }
         ],
         setlist: [
-          { title: "ASIAN KUNG-FU GENERATION - Re:Re" },
+          { title: "ASIAN KUNG-FU GENERATION - Re:Re: (2016 Version)" },
           { title: "ASIAN KUNG-FU GENERATION - Rockn' Roll, Morning Light Falls on You" },
           { title: "ASIAN KUNG-FU GENERATION - Solanin" },
           { title: "ASIAN KUNG-FU GENERATION - Rewrite" },
