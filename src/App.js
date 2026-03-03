@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import GigList from './components/GigList';
 import GigDetail from './components/GigDetail';
 import './App.css';
 
@@ -27,7 +28,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<GigDetail />} />
+          <Route path="/" element={<GigList />} />
           <Route path="/gig/:title" element={<GigDetail />} />
         </Routes>
       </div>

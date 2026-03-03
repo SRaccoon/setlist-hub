@@ -5,565 +5,139 @@
   font-style: normal;
 }
 
+/* ── base ── */
 .gig-detail {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+  background: #0a0a0a;
+  color: #fff;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
-.gig-header {
-  position: relative;
-}
-
-.back-button {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  padding: 12px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 1rem;
-}
-
-.back-button:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: white;
-  text-decoration: none;
-  transform: translateX(-5px);
-}
-
+/* ── hero ── */
 .gig-hero {
   position: relative;
   height: 70vh;
-  min-height: 500px;
+  min-height: 480px;
+  max-width: 1300px;
+  margin: 0 auto;
   overflow: hidden;
+  border-radius: 0 0 20px 20px;
 }
 
-.gig-hero-image {
+.gig-hero-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.8) contrast(1.1);
+  cursor: pointer;
 }
 
-.gig-hero-overlay {
+.gig-hero-dim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #0a0a0a 0%, rgba(10,10,10,0.6) 40%, transparent 70%);
+  pointer-events: none;
+}
+
+.back-link {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 10;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+}
+
+.back-link:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+.gig-hero-content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
-  color: white;
-  padding: 80px 40px 50px;
-  text-align: center;
-}
-
-.gig-hero-overlay h1 {
-  font-size: 4rem;
-  margin: 0 auto 15px auto;
-  font-weight: 800;
-  font-family: 'YeongwolTTF-Regular', sans-serif;
-  text-shadow: none;
-  background: none;
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
-  background-clip: initial;
-  filter: none;
+  padding: 0 40px 48px;
   max-width: 800px;
-  color: white;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
-.gig-hero-overlay h1 .letter-j { color: #FFD700; } /* Bright yellow */
-.gig-hero-overlay h1 .letter-a { color: #FF0000; } /* Vibrant red */
-.gig-hero-overlay h1 .letter-n { color: #32CD32; } /* Lime green */
-.gig-hero-overlay h1 .letter-g { color: #FF69B4; } /* Bright pink/magenta */
-.gig-hero-overlay h1 .letter-f { color: #FFD700; } /* Bright yellow */
-.gig-hero-overlay h1 .letter-e { color: #FF0000; } /* Vibrant red */
-.gig-hero-overlay h1 .letter-s { color: #32CD32; } /* Lime green */
-.gig-hero-overlay h1 .letter-t { color: #FF69B4; } /* Bright pink/magenta */
-.gig-hero-overlay h1 .letter-i { color: #FFD700; } /* Bright yellow */
-.gig-hero-overlay h1 .letter-v { color: #FF0000; } /* Vibrant red */
-.gig-hero-overlay h1 .letter-l { color: #FF69B4; } /* Bright pink/magenta */
+.gig-hero-content h1 {
+  font-family: 'YeongwolTTF-Regular', 'Pretendard', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin: 0 0 16px;
+  line-height: 1.15;
+  letter-spacing: 1px;
+}
 
-/* 온도 공연 제목 스타일 - 빨강-주황 그라데이션 */
-.gig-hero-overlay h1.temperature-title {
+.gig-hero-content h1.title-temperature {
   background: linear-gradient(45deg, #FF0000, #FF4500, #FF8C00, #FFA500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: none;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.7));
 }
 
-.gig-hero-overlay h1 span {
-  text-shadow: 
-    2px 2px 0 #fff,
-    -2px -2px 0 #fff,
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff,
-    1px 1px 0 #fff,
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff;
-  padding: 0 2px;
+.jjf-line {
+  display: inline;
+}
+
+.jjf-line span {
+  text-shadow:
+    2px 2px 0 #fff, -2px -2px 0 #fff,
+    2px -2px 0 #fff, -2px 2px 0 #fff,
+    1px 1px 0 #fff, -1px -1px 0 #fff;
   display: inline-block;
-  position: relative;
+  padding: 0 1px;
 }
 
-/* 데스크톱에서는 한 줄로 표시 */
-.mobile-break {
-  display: none;
-}
+.jjf-space { white-space: pre; }
+.jjf-break { display: none; }
 
-.desktop-space {
-  display: inline;
-  white-space: pre;
-}
-
-.first-line, .second-line {
-  display: inline;
-}
-
-.gig-hero-overlay .gig-date {
-  font-size: 1.3rem;
-  margin: 8px auto;
-  opacity: 1;
-  font-weight: 600;
-  color: #FFD700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  max-width: 600px;
-}
-
-.gig-hero-overlay .gig-venue {
-  font-size: 1.3rem;
-  margin: 8px auto;
-  opacity: 1;
-  font-weight: 600;
-  color: #FFA500;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  max-width: 600px;
+.gig-meta {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 12px;
+  flex-wrap: wrap;
 }
+
+.meta-dot { opacity: 0.3; }
 
 .venue-link {
-  color: #FFA500;
+  color: rgba(255,255,255,0.4);
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  opacity: 0.8;
+  margin-left: 4px;
+  font-size: 0.8rem;
+  transition: color 0.2s;
 }
+.venue-link:hover { color: #fff; }
 
-.venue-link:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  color: #FFD700;
-}
-
-.gig-hero-overlay .gig-description {
-  font-size: 1.0rem;
-  margin: 20px auto 0 auto;
-  opacity: 1;
-  line-height: 1.7;
-  max-width: 700px;
-  color: white;
-  font-weight: 500;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-}
-
-.teams-section {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
-
-.teams-section h2 {
-  text-align: center;
-  color: white;
-  font-size: 3rem;
-  margin-bottom: 50px;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  letter-spacing: -1px;
-}
-
-.teams-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: none;
-  gap: 10px;
-  align-items: start;
-}
-
-/* TEMPERATURE 공연의 경우 세 팀을 가운데 정렬 */
-.teams-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: none;
-  gap: 10px;
-  align-items: start;
-}
-
-.team-card {
-  background: rgba(20, 20, 25, 0.95);
-  border-radius: 25px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.team-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-}
-
-.team-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  flex-shrink: 0;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-.team-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.3s ease;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  display: block;
+.gig-desc {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.4);
   margin: 0;
-  padding: 0;
-  border-radius: 20px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
-.team-card:hover .team-image img {
-  transform: scale(1.05);
-}
-
-.team-info {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.team-info h3 {
-  margin: 0 0 10px 0;
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.team-description {
-  color: #bdc3c7;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0 0 15px 0;
-  font-weight: 500;
-  flex: 1;
-  min-height: 30px;
-}
-
-.setlist-section {
-  margin: 20px 0 0 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.setlist-section h4 {
-  color: white;
-  font-size: 1.2rem;
-  margin: 0 0 15px 0;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-}
-
-.setlist-section h4::before {
-  content: '🎵';
-  margin-right: 10px;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-}
-
-.setlist {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background: rgba(255, 215, 0, 0.1);
-  border-radius: 15px;
-  padding: 15px;
-  color: white;
-  flex: 1;
-  border: 1px solid rgba(255, 215, 0, 0.3);
-}
-
-.setlist li {
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
-  font-size: 1rem;
-  position: relative;
-  padding-left: 0;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 36px;
-}
-
-.setlist li:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding-left: 5px;
-}
-
-.setlist li:before {
-  display: none;
-}
-
-.song-title {
-  flex: 1;
-}
-
-.youtube-link {
-  background: #FF0000;
-  color: white;
-  text-decoration: none;
-  padding: 4px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.3);
-  width: 24px;
-  height: 24px;
-}
-
-.youtube-link:hover {
-  background: #CC0000;
-  color: white;
-  text-decoration: none;
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
-}
-
-.youtube-icon {
-  width: 12px;
-  height: 12px;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.setlist li:last-child {
-  border-bottom: none;
-}
-
-.members-section {
-  margin: 15px 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.members-section h4 {
-  color: white;
-  font-size: 1.2rem;
-  margin: 0 0 15px 0;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-}
-
-.members-section h4::before {
-  content: '👥';
-  margin-right: 10px;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-}
-
-.members-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.member-item {
-  background: rgba(255, 215, 0, 0.2);
-  padding: 4px 8px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 215, 0, 0.4);
-  color: white;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  height: 24px;
-}
-
-.member-item:hover {
-  background: rgba(255, 215, 0, 0.3);
-  transform: translateY(-1px);
-}
-
-.member-info {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-bottom: 0;
-}
-
-.member-role {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  padding: 1px 4px;
-  border-radius: 8px;
-  font-size: 0.6rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.member-name {
-  font-weight: 500;
-  color: white;
-  font-size: 0.75rem;
-}
-
-.member-description {
-  display: none;
-}
-
-.error-message {
-  text-align: center;
-  padding: 100px 20px;
-  color: #666;
-}
-
-.error-message h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Team 1 - Subtle Red */
-.team-card.team-1 .members-section h4::before { color: #E74C3C !important; }
-.team-card.team-1 .setlist-section h4::before { color: #E74C3C !important; }
-
-/* Team 2 - Subtle Pink */
-.team-card.team-2 .members-section h4::before { color: #E91E63 !important; }
-.team-card.team-2 .setlist-section h4::before { color: #E91E63 !important; }
-
-/* Team 3 - Subtle Blue */
-.team-card.team-3 .members-section h4::before { color: #00BCD4 !important; }
-.team-card.team-3 .setlist-section h4::before { color: #00BCD4 !important; }
-
-/* Team 4 - Subtle Orange */
-.team-card.team-4 .members-section h4::before { color: #FF9800 !important; }
-.team-card.team-4 .setlist-section h4::before { color: #FF9800 !important; }
-
-.team-image-color {
-  background: linear-gradient(135deg, #FF6B6B, #FF69B4);
-}
-
-.team-card.team-1 .team-image-color {
-  background: linear-gradient(135deg, #FF6B6B, #FF8C00);
-}
-
-.team-card.team-2 .team-image-color {
-  background: linear-gradient(135deg, #FF69B4, #FFD700);
-}
-
-.team-card.team-3 .team-image-color {
-  background: linear-gradient(135deg, #32CD32, #FF6B6B);
-}
-
-/* Team 1 - Red */
-.team-card.team-1 .member-item {
-  background: rgba(231, 76, 60, 0.2) !important;
-  border: 1px solid rgba(231, 76, 60, 0.4) !important;
-}
-
-.team-card.team-1 .setlist {
-  background: rgba(231, 76, 60, 0.1) !important;
-  border: 1px solid rgba(231, 76, 60, 0.3) !important;
-}
-
-/* Team 2 - Brownish Orange */
-.team-card.team-2 .member-item {
-  background: rgba(205, 133, 63, 0.2) !important;
-  border: 1px solid rgba(205, 133, 63, 0.4) !important;
-}
-
-.team-card.team-2 .setlist {
-  background: rgba(205, 133, 63, 0.1) !important;
-  border: 1px solid rgba(205, 133, 63, 0.3) !important;
-}
-
-/* Team 3 - Green */
-.team-card.team-3 .member-item {
-  background: rgba(50, 205, 50, 0.2) !important;
-  border: 1px solid rgba(50, 205, 50, 0.4) !important;
-}
-
-.team-card.team-3 .setlist {
-  background: rgba(50, 205, 50, 0.1) !important;
-  border: 1px solid rgba(50, 205, 50, 0.3) !important;
-}
-
-/* Team 4 - Yellow */
-.team-card.team-4 .member-item {
-  background: rgba(255, 215, 0, 0.2) !important;
-  border: 1px solid rgba(255, 215, 0, 0.4) !important;
-}
-
-.team-card.team-4 .setlist {
-  background: rgba(255, 215, 0, 0.1) !important;
-  border: 1px solid rgba(255, 215, 0, 0.3) !important;
-}
-
-/* 포스터 라이트박스 */
-.poster-lightbox {
+/* ── lightbox ── */
+.lightbox {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.95);
+  inset: 0;
+  background: rgba(0,0,0,0.95);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -571,118 +145,266 @@
   cursor: pointer;
 }
 
-.poster-lightbox-content {
-  position: relative;
+.lightbox img {
   max-width: 90%;
   max-height: 90%;
-  cursor: default;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
-.poster-lightbox-image {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-.poster-lightbox-close {
+.lightbox-close {
   position: absolute;
-  top: -40px;
-  right: 0;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
+  top: 24px;
+  right: 24px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: background 0.2s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.2); }
+
+/* ── teams ── */
+.teams {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-.poster-lightbox-close:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: scale(1.1);
+.team {
+  background: #141414;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  overflow: hidden;
+  animation: fadeUp 0.5s ease-out backwards;
 }
 
-/* 포스터 이미지 호버 효과 */
-.gig-hero-image:hover {
-  transform: scale(1.02);
-  transition: transform 0.3s ease;
+.team:nth-child(1) { animation-delay: 0.05s; }
+.team:nth-child(2) { animation-delay: 0.1s; }
+.team:nth-child(3) { animation-delay: 0.15s; }
+.team:nth-child(4) { animation-delay: 0.2s; }
+.team:nth-child(5) { animation-delay: 0.25s; }
+.team:nth-child(6) { animation-delay: 0.3s; }
+
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-@media (max-width: 768px) {
+.team-thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.team-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-thumb-color {
+  width: 100%;
+  height: 100%;
+}
+
+.team-title {
+  min-width: 0;
+}
+
+.team-title h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.team-title p {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.team-body {
+  padding: 20px;
+}
+
+/* members */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.member {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.05);
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.member-role {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.08);
+  padding: 2px 5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* setlist */
+.team-setlist h4 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 2px;
+  margin: 0 0 12px;
+}
+
+.team-setlist ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-setlist li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: background 0.2s;
+}
+
+.team-setlist li:last-child { border-bottom: none; }
+
+.team-setlist li:hover {
+  background: rgba(255,255,255,0.02);
+  border-radius: 6px;
+  padding-left: 8px;
+  margin-left: -8px;
+  padding-right: 8px;
+  margin-right: -8px;
+}
+
+.song-num {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.2);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  min-width: 20px;
+}
+
+.song-title {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+}
+
+.yt-link {
+  color: rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.yt-link:hover {
+  color: #FF0000;
+  background: rgba(255,0,0,0.1);
+}
+
+/* ── error ── */
+.error-message {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.error-message h2 {
+  color: rgba(255,255,255,0.5);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── mobile ── */
+@media (max-width: 640px) {
   .gig-hero {
-    height: 300px;
+    height: 55vh;
+    min-height: 360px;
   }
-  
-  .gig-hero-overlay h1 {
+
+  .gig-hero-content {
+    padding: 0 20px 32px;
+  }
+
+  .gig-hero-content h1 {
     font-size: 2rem;
-    line-height: 1.2;
   }
-  
-  .mobile-break {
-    display: block;
+
+  .jjf-break { display: block; }
+  .jjf-space { display: none; }
+
+  .back-link {
+    top: 16px;
+    left: 16px;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
   }
-  
-  .desktop-space {
-    display: none;
-  }
-  
-  .first-line, .second-line {
-    display: block;
-  }
-  
-  .teams-grid {
+
+  .teams {
+    padding: 32px 16px 60px;
     grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 30px;
+    gap: 20px;
   }
-  
-  .teams-section {
-    padding: 30px 15px;
+
+  .team-header {
+    padding: 16px;
   }
-  
-  .teams-section h2 {
-    font-size: 2rem;
+
+  .team-thumb {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
   }
-  
-  .back-button {
-    top: 15px;
-    left: 15px;
-    padding: 8px 16px;
-    font-size: 0.9rem;
+
+  .team-body {
+    padding: 16px;
   }
-  
-  .members-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
+
+  .song-title {
+    font-size: 0.82rem;
   }
-  
-  .member-item {
-    padding: 12px;
-  }
-  
-  .member-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-  }
-  
-  .member-role {
-    align-self: flex-start;
-  }
-  
-  .team-card {
-    height: auto;
-  }
-  
-  .team-image {
-    aspect-ratio: 1 / 1;
-  }
-} 
+}
