@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C1810"/>
+      <stop offset="100%" style="stop-color:#1A0F08"/>
+    </linearGradient>
+    <linearGradient id="spotlight1" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="spotlight2" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FF6B6B;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- stage lights -->
+  <polygon points="100,0 40,250 160,250" fill="url(#spotlight1)"/>
+  <polygon points="300,0 240,250 360,250" fill="url(#spotlight2)"/>
+  <!-- stage -->
+  <rect x="0" y="280" width="400" height="120" fill="#3D2817" opacity="0.8"/>
+  <rect x="0" y="280" width="400" height="5" fill="#FFD700" opacity="0.3"/>
+  <!-- crowd hands raised -->
+  <g fill="#4A3525">
+    <!-- person 1 -->
+    <ellipse cx="60" cy="340" rx="20" ry="25"/>
+    <circle cx="60" cy="305" r="14"/>
+    <rect x="48" y="260" width="8" height="50" rx="4" transform="rotate(-15, 52, 285)"/>
+    <!-- person 2 -->
+    <ellipse cx="120" cy="345" rx="22" ry="25"/>
+    <circle cx="120" cy="310" r="15"/>
+    <rect x="108" y="255" width="8" height="55" rx="4" transform="rotate(10, 112, 280)"/>
+    <rect x="126" y="258" width="8" height="52" rx="4" transform="rotate(-10, 130, 280)"/>
+    <!-- person 3 -->
+    <ellipse cx="185" cy="335" rx="22" ry="28"/>
+    <circle cx="185" cy="298" r="15"/>
+    <rect x="173" y="245" width="8" height="55" rx="4" transform="rotate(-20, 177, 270)"/>
+    <rect x="190" y="248" width="8" height="50" rx="4" transform="rotate(5, 194, 270)"/>
+    <!-- person 4 -->
+    <ellipse cx="250" cy="340" rx="20" ry="26"/>
+    <circle cx="250" cy="305" r="14"/>
+    <rect x="238" y="252" width="8" height="55" rx="4" transform="rotate(15, 242, 275)"/>
+    <rect x="255" y="255" width="8" height="50" rx="4" transform="rotate(-8, 259, 278)"/>
+    <!-- person 5 -->
+    <ellipse cx="315" cy="345" rx="22" ry="25"/>
+    <circle cx="315" cy="310" r="15"/>
+    <rect x="308" y="260" width="8" height="50" rx="4" transform="rotate(-5, 312, 285)"/>
+    <!-- person 6 -->
+    <ellipse cx="370" cy="340" rx="20" ry="25"/>
+    <circle cx="370" cy="305" r="14"/>
+    <rect x="363" y="255" width="8" height="55" rx="4" transform="rotate(20, 367, 278)"/>
+  </g>
+  <!-- speakers on stage -->
+  <g>
+    <rect x="15" y="240" width="50" height="40" rx="5" fill="#333"/>
+    <circle cx="40" cy="260" r="12" fill="#222" stroke="#555" stroke-width="1"/>
+    <circle cx="40" cy="260" r="5" fill="#444"/>
+    <rect x="335" y="240" width="50" height="40" rx="5" fill="#333"/>
+    <circle cx="360" cy="260" r="12" fill="#222" stroke="#555" stroke-width="1"/>
+    <circle cx="360" cy="260" r="5" fill="#444"/>
+  </g>
+  <!-- microphone center stage -->
+  <g transform="translate(200, 220)">
+    <rect x="-2" y="0" width="4" height="60" fill="#888"/>
+    <circle cx="0" cy="-5" r="10" fill="#666" stroke="#999" stroke-width="1"/>
+    <line x1="-8" y1="-5" x2="8" y2="-5" stroke="#999" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-7" y1="-10" x2="7" y2="-10" stroke="#999" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-7" y1="0" x2="7" y2="0" stroke="#999" stroke-width="0.5" opacity="0.5"/>
+  </g>
+  <!-- sparkles / confetti -->
+  <g opacity="0.7">
+    <rect x="80" y="100" width="6" height="6" fill="#FFD700" transform="rotate(45, 83, 103)"/>
+    <rect x="170" y="70" width="5" height="5" fill="#FF6B6B" transform="rotate(30, 172, 72)"/>
+    <rect x="260" y="90" width="6" height="6" fill="#5DADE2" transform="rotate(60, 263, 93)"/>
+    <rect x="330" y="130" width="5" height="5" fill="#FFD700" transform="rotate(15, 332, 132)"/>
+    <rect x="50" y="160" width="4" height="4" fill="#27AE60" transform="rotate(45, 52, 162)"/>
+    <circle cx="140" cy="130" r="3" fill="#E74C3C" opacity="0.6"/>
+    <circle cx="290" cy="60" r="3" fill="#FFD700" opacity="0.6"/>
+  </g>
+  <!-- "FULL" text -->
+  <text x="200" y="170" font-size="16" fill="#FFD700" opacity="0.3" text-anchor="middle" font-weight="bold" letter-spacing="8">FULL ATTENDANCE</text>
+</svg>

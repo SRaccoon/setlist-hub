@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A2E14"/>
+      <stop offset="100%" style="stop-color:#1A4D2E"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- ground -->
+  <ellipse cx="200" cy="370" rx="150" ry="20" fill="#2D5F3E" opacity="0.5"/>
+  <!-- trunk -->
+  <rect x="185" y="200" width="30" height="170" rx="8" fill="#8B6F47"/>
+  <rect x="190" y="200" width="8" height="170" rx="4" fill="#A0845C" opacity="0.5"/>
+  <!-- branches -->
+  <g stroke="#6B8E5A" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M200 280 Q160 260 130 240"/>
+    <path d="M200 280 Q240 260 270 240"/>
+    <path d="M200 240 Q150 210 120 180"/>
+    <path d="M200 240 Q250 210 280 180"/>
+    <path d="M200 210 Q170 180 150 150"/>
+    <path d="M200 210 Q230 180 250 150"/>
+  </g>
+  <!-- leaf clusters (music notes as leaves!) -->
+  <g fill="#27AE60">
+    <circle cx="130" cy="235" r="18" opacity="0.8"/>
+    <circle cx="115" cy="220" r="14" opacity="0.6"/>
+    <circle cx="270" cy="235" r="18" opacity="0.8"/>
+    <circle cx="285" cy="220" r="14" opacity="0.6"/>
+    <circle cx="120" cy="175" r="20" opacity="0.7"/>
+    <circle cx="100" cy="160" r="15" opacity="0.5"/>
+    <circle cx="280" cy="175" r="20" opacity="0.7"/>
+    <circle cx="300" cy="160" r="15" opacity="0.5"/>
+    <circle cx="150" cy="145" r="18" opacity="0.7"/>
+    <circle cx="250" cy="145" r="18" opacity="0.7"/>
+    <circle cx="200" cy="120" r="25" opacity="0.8"/>
+    <circle cx="180" cy="105" r="18" opacity="0.6"/>
+    <circle cx="220" cy="105" r="18" opacity="0.6"/>
+    <circle cx="200" cy="90" r="15" opacity="0.5"/>
+  </g>
+  <!-- music notes scattered in the tree -->
+  <g fill="#fff" opacity="0.8">
+    <g transform="translate(130, 228)">
+      <ellipse cx="0" cy="0" rx="5" ry="4" transform="rotate(-20)"/>
+      <rect x="3" y="-18" width="2" height="18" rx="1"/>
+    </g>
+    <g transform="translate(270, 228)">
+      <ellipse cx="0" cy="0" rx="5" ry="4" transform="rotate(-20)"/>
+      <rect x="3" y="-18" width="2" height="18" rx="1"/>
+      <path d="M5 -18 Q13 -24 5 -10" fill="#fff"/>
+    </g>
+    <g transform="translate(200, 115)">
+      <ellipse cx="0" cy="0" rx="6" ry="4.5" transform="rotate(-20)"/>
+      <rect x="4" y="-22" width="2.5" height="22" rx="1"/>
+      <path d="M6.5 -22 Q15 -28 6.5 -12" fill="#fff"/>
+    </g>
+    <g transform="translate(150, 140)">
+      <ellipse cx="0" cy="0" rx="4" ry="3" transform="rotate(-20)"/>
+      <rect x="2.5" y="-15" width="2" height="15" rx="1"/>
+    </g>
+  </g>
+  <!-- cute face on trunk -->
+  <circle cx="193" cy="310" r="3" fill="#5D4E37"/>
+  <circle cx="207" cy="310" r="3" fill="#5D4E37"/>
+  <path d="M190 322 Q200 330 210 322" stroke="#5D4E37" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- tiny sparkles -->
+  <g fill="#FFD700" opacity="0.6">
+    <polygon points="100,100 103,108 110,108 104,113 106,120 100,116 94,120 96,113 90,108 97,108"/>
+    <polygon points="300,80 302,86 308,86 303,89 305,95 300,92 295,95 297,89 292,86 298,86" transform="scale(0.8)"/>
+    <polygon points="320,280 322,286 328,286 323,289 325,295 320,292 315,295 317,289 312,286 318,286" transform="scale(0.7)"/>
+  </g>
+</svg>
