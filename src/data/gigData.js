@@ -194,12 +194,12 @@ const gigData = {
           { name: "황지윤", role: "건반" }
         ],
         setlist: [
-          { title: "한로로 - 입춘" },
-          { title: "최유리 - 잘 지내자 우리" },
-          { title: "강수지 - 흩어진 나날들" },
-          { title: "양파 - 애송이의 사랑" },
-          { title: "소란 - 사랑한 마음엔 죄가 없다" },
-          { title: "유다빈밴드 - LETTER" }
+          { title: "한로로 - 입춘", youtube: "https://youtu.be/kIiW3XRP7bU?si=5CV83QuPqPN9ANM4" },
+          { title: "최유리 - 잘 지내자 우리", youtube: "https://youtu.be/l7OLviBFHGo?si=shWztLisevO7h9D6" },
+          { title: "강수지 - 흩어진 나날들", youtube: "https://youtu.be/oHrKxxlhVqQ?si=V_QjSr9iy6PkivMJ" },
+          { title: "양파 - 애송이의 사랑", youtube: "https://youtu.be/JTplSsoWjKI?si=-beoGBwULbl07Wgw" },
+          { title: "소란 - 사랑한 마음엔 죄가 없다", youtube: "https://youtu.be/2NyfVo89JRA?si=YX9VzCtX3QbWMNwb" },
+          { title: "유다빈밴드 - LETTER", youtube: "https://youtu.be/AKOe_kCI-_I?si=_ohYG7g42SQg3fRZ" }
         ]
       },
       {
@@ -215,10 +215,10 @@ const gigData = {
           { name: "문영은", role: "건반" },
         ],
         setlist: [
-          { title: "Jeff Beck - Stratus" },
-          { title: "Red Hot Chili Peppers - Can't Stop" },
-          { title: "Eric Clapton - Layla" },
-          { title: "Seat Belts - Gotta Knock a Little Harder" },
+          { title: "Jeff Beck - Stratus", youtube: "https://youtu.be/F36bITNhUZ8?si=zvYWFDo49C9MbBu5" },
+          { title: "Red Hot Chili Peppers - Can't Stop", youtube:"https://youtu.be/8DyziWtkfBw?si=tgNR8tqPciVNwb4j" },
+          { title: "Eric Clapton - Layla", youtube: "https://youtu.be/-KG2O5PSCSs?si=A8ZagZUwISquoBqt" },
+          { title: "Seat Belts - Gotta Knock a Little Harder", youtube: "https://youtu.be/d_3fBxVewj8?si=KkcXEC7DQHiilSZ7" },
           { title: "" },
           { title: "" }
 
@@ -238,11 +238,11 @@ const gigData = {
           { name: "신소윤", role: "건반" }
         ],
         setlist: [
-          { title: "왁스 - 내게 남은 사랑을 다 줄께" },
-          { title: "체리필터 - 오리 날다" },
-          { title: "크라잉넛 - 밤이 깊었네" },
-          { title: "자우림 - 매직 카펫 라이드" },
-          { title: "Guns N' Roses - Sweet Child O' Mine" },
+          { title: "왁스 - 내게 남은 사랑을 다 줄께", youtube:"https://youtu.be/6RdfM2n-4gY?si=51dnSCEB0b_luKvh" },
+          { title: "체리필터 - 오리 날다", youtube: "https://youtu.be/sgnjnNI5ktQ?si=J88tFkcwxGgs-Arg" },
+          { title: "크라잉넛 - 밤이 깊었네" , youtube: "https://youtu.be/9tdkoOJvmmI?si=wDMQezSXrrRzLEZf"},
+          { title: "자우림 - 매직 카펫 라이드", youtube: "https://youtu.be/cvpU-7BO0JE?si=DfL-TlbWgnWoJlPb" },
+          { title: "Guns N' Roses - Sweet Child O' Mine", youtube: "https://youtu.be/1w7OgIMMRc4?si=IpqxWcu1sgpFVsZ-" },
           { title: "" }
         ]
       },
@@ -259,11 +259,11 @@ const gigData = {
           { name: "이수진", role: "드럼" }
         ],
         setlist: [
-          { title: "ASIAN KUNG-FU GENERATION - Re:Re: (2016 Version)" },
-          { title: "ASIAN KUNG-FU GENERATION - Rockn' Roll, Morning Light Falls on You" },
-          { title: "ASIAN KUNG-FU GENERATION - Solanin" },
-          { title: "ASIAN KUNG-FU GENERATION - Rewrite" },
-          { title: "ASIAN KUNG-FU GENERATION - Haruka Kanata" },
+          { title: "ASIAN KUNG-FU GENERATION - Re:Re: (2016 Version)", youtube: "https://youtu.be/BUX_JNixxZQ?si=lC-DPrfizgof2al4" },
+          { title: "ASIAN KUNG-FU GENERATION - Rockn' Roll, Morning Light Falls on You", youtube: "https://youtu.be/rDTFSD9K9dA?si=USv1l5AKuXYk9_7x" },
+          { title: "ASIAN KUNG-FU GENERATION - Solanin", youtube: "https://youtu.be/xZD1B1TskXs?si=XK79J_64X9mojJhL" },
+          { title: "ASIAN KUNG-FU GENERATION - Rewrite", youtube: "https://youtu.be/ZmeudwRMrsU?si=xzd2C9DPwSIs5j8f" },
+          { title: "ASIAN KUNG-FU GENERATION - Haruka Kanata", youtube: "https://youtu.be/nJ6A6GC_ki4?si=9y7EyQmwspq-tFet" },
           { title: "" }
 
         ]
@@ -282,12 +282,12 @@ const gigData = {
           { name: "윤유성", role: "드럼" }
         ],
         setlist: [
-          { title: "라이프앤타임 - 호랑이" },
-          { title: "TwoTon Shoe - Medicine" },
-          { title: "Mrs. GREEN APPLE - Inferno" },
-          { title: "Turnstile - Holiday" },
-          { title: "Gary Clark Jr - Come Together" },
-          { title: "실리카겔 - Tic Tac Tok" }
+          { title: "라이프앤타임 - 호랑이", youtube: "https://youtu.be/Zug3yknTJI0?si=DBJpkmti8wlwQ6Gg" },
+          { title: "Two Ton Shoe - Medicine", youtube: "https://youtu.be/WRBy78lZ91c?si=zZS1x3YIGD4YFV2i" },
+          { title: "Mrs. GREEN APPLE - Inferno", youtube: "https://youtu.be/wfCcs0vLysk?si=sAbsgtyqlXwvczih" },
+          { title: "Turnstile - Holiday", youtube: "https://youtu.be/D6yaJur9JUE?si=hVsCLgCrBxZNyuU_" },
+          { title: "Gary Clark Jr - Come Together", youtube: "https://youtu.be/r7imYeuAfkg?si=xZOWEAlRIvXNbSlt" },
+          { title: "실리카겔 - Tic Tac Tok" , youtube: "https://youtu.be/VpZjRvy8AR8?si=tGs5Y2dAC1mmSrgz"}
         ]
       }
     ]
