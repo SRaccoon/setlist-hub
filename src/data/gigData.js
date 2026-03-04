@@ -185,7 +185,7 @@ const gigData = {
         id: 1,
         name: "멜랑꼴리",
         image: `${process.env.PUBLIC_URL}/team-melancholy.svg`,
-        description: "한국 인디 감성을 따뜻하게 풀어내는 5인조 밴드",
+        description: "이름처럼 좀 축축한 노래들만 골라서 합니다",
         members: [
           { name: "정지민", role: "보컬" },
           { name: "주영대", role: "기타" },
@@ -206,7 +206,7 @@ const gigData = {
         id: 2,
         name: "조나단과 땡전들",
         image: `${process.env.PUBLIC_URL}/team-jonathan.svg`,
-        description: "조나단이 이끌고 땡전들이 따라붙는다, 무대 위의 원맨쇼는 다섯이서 완성된다",
+        description: "조나단이 기타 치겠다는데 안 갈 수가 있나",
         members: [
           { name: "한재준", role: "보컬" },
           { name: "조나단", role: "기타" },
@@ -228,7 +228,7 @@ const gigData = {
         id: 3,
         name: "스킬트리",
         image: `${process.env.PUBLIC_URL}/team-skilltree.svg`,
-        description: "왁스부터 건즈앤로지스까지, 시대의 명곡들을 무대 위에 소환하는 6인조 밴드",
+        description: "왁스에서 건즈앤로지스까지, 스킬 포인트 잘 찍었다",
         members: [
           { name: "강해린", role: "보컬" },
           { name: "이혜미", role: "리드기타" },
@@ -250,7 +250,7 @@ const gigData = {
         id: 4,
         name: "아지캉플젝",
         image: `${process.env.PUBLIC_URL}/team-akfg.png`,
-        description: "아시안 쿵푸 제너레이션을 향한 순수한 덕심으로 뭉친 커버 프로젝트",
+        description: "인천에서 왔습니다",
         members: [
           { name: "양지민", role: "보컬" },
           { name: "심정현", role: "리드기타" },
@@ -272,7 +272,7 @@ const gigData = {
         id: 5,
         name: "전원참석",
         image: `${process.env.PUBLIC_URL}/team-fullattend.svg`,
-        description: "무대 위 6명만으론 부족하다, 관객까지 전원참석시키는 밴드",
+        description: "6명이 무대 올라가면 객석도 가만히 못 있더라",
         members: [
           { name: "김현수", role: "보컬" },
           { name: "노미래", role: "보컬" },
