@@ -389,6 +389,7 @@ const gigData = {
         id: 5,
         name: "평균나이33세",
         color: "linear-gradient(135deg, #43CEA2 0%, #185A9D 100%)",
+        image: `${process.env.PUBLIC_URL}/springnight/team-33.jpg`,
         description: "실제로 계산해보진 않았습니다",
         members: [
           { name: "최화랑", role: "보컬" },
