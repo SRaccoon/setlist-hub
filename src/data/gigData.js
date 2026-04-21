@@ -291,6 +291,126 @@ const gigData = {
         ]
       }
     ]
+  },
+  "springnight": {
+    id: 5,
+    title: "Spring Night",
+    date: "2026-05-01 18:00",
+    venue: "신논현 펄스 라이브홀",
+    venueLink: "https://naver.me/G4WoE9X7",
+    image: process.env.PUBLIC_URL + "/spring-night.png",
+    description: "일단 오면 됩니다. 노는 건 현장에서",
+    teams: [
+      {
+        id: 1,
+        name: "Mouse Cow",
+        image: `${process.env.PUBLIC_URL}/team-mousecow.png`,
+        description: "쥐띠랑 소띠",
+        members: [
+          { name: "김현진", role: "보컬" },
+          { name: "공석준", role: "기타" },
+          { name: "심정현", role: "기타" },
+          { name: "최예지", role: "베이스" },
+          { name: "유경", role: "드럼" }
+        ],
+        setlist: [
+          { title: "Dragon Pony - 지구소년", youtube: "https://youtu.be/p63vMiwnpBo?si=R_wbXLMF_X2DdPJg" },
+          { title: "Woodz - Amnesia", youtube: "https://youtu.be/32EjW5rFvck?si=D5LDSzlX6vkb0gA_" },
+          { title: "YB - 흰수염고래", youtube: "https://youtu.be/rBPwJf2gIDI?si=4p6F8QBMmAfmhMt8" },
+          { title: "극동아시아타이거즈 - 흔들리는 시간 속에", youtube: "https://youtu.be/QR-mqWbGFW8?si=b-ZuWDjis7s5NOU-" },
+          { title: "극동아시아타이거즈 - 비냄새", youtube: "https://youtu.be/I_PntcnBWHw?si=GHy5bDLFatHiEs9t" },
+          { title: "리도어 - 욕망주사기", youtube: "https://youtu.be/uVs0tqOck7k?si=X6uyCELir9RlCM7K" }
+        ]
+      },
+      {
+        id: 2,
+        name: "DPM",
+        color: "linear-gradient(135deg, #E44D26 0%, #F7A541 100%)",
+        description: "폭약을 채운 음악 즐기기",
+        members: [
+          { name: "", role: "보컬/세컨기타" },
+          { name: "", role: "보컬/세컨기타" },
+          { name: "", role: "기타" },
+          { name: "", role: "베이스" },
+          { name: "", role: "드럼" }
+        ],
+        setlist: [
+          { title: "한로로 - 금붕어", youtube: "https://youtu.be/dAgY7zUqd8E?si=sawyiO7MpirB3tY4" },
+          { title: "정우 - 클라우드 쿠쿠랜드", youtube: "https://youtu.be/mW-V6C5eyIM?si=F73hjQO-cEXtQuVd" },
+          { title: "리도어 - 사랑의 미학", youtube: "https://youtu.be/3VlqlntAOt8?si=jIGBoHxJ4j0u8kSE" },
+          { title: "쏜애플 - 우리들의 밤은 당신의 낮보다 아름답다", youtube: "https://youtu.be/mKOOH3_xXj0?si=XnJDqHFCzg0hwzOJ" },
+          { title: "검정치마 - Antifreeze", youtube: "https://youtu.be/PGADim6UzHE?si=1amaHvuZqdxnYQSj" },
+          { title: "글렌체크 - 60's Cardin", youtube: "https://youtu.be/0fN71Wtgoa8?si=M8miKx8VLyj4t5l2" }
+        ]
+      },
+      {
+        id: 3,
+        name: "Buy the Dip",
+        color: "linear-gradient(135deg, #F5AF19 0%, #F12711 100%)",
+        description: "이 팀 저점매수, 지금이 기회!",
+        members: [
+          { name: "김우리", role: "보컬/베이스" },
+          { name: "임영빈", role: "기타" },
+          { name: "김성아", role: "기타" },
+          { name: "최유민", role: "드럼" }
+        ],
+        setlist: [
+          { title: "(자작곡) - 우리가 잃어버린 것들" },
+          { title: "(자작곡) - 너의 세계에 오류가 있다면" },
+          { title: "(자작곡) - 직장인 서사시" },
+          { title: "(자작곡) - 기분전환" },
+          { title: "(자작곡) - 빛바랜 일기" },
+          { title: "(자작곡) - 낡은 청춘의 찬가" }
+        ]
+      },
+      {
+        id: 4,
+        name: "The Garbage Collectors",
+        color: "linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)",
+        description: "",
+        members: [
+          { name: "", role: "보컬" },
+          { name: "", role: "보컬" },
+          { name: "", role: "기타" },
+          { name: "", role: "기타" },
+          { name: "", role: "베이스" },
+          { name: "", role: "드럼" },
+          { name: "", role: "키보드" }
+        ],
+        setlist: [
+          { title: "ヨルシカ - 雨とカプチーノ", youtube: "https://www.youtube.com/watch?v=PWbRleMGagU" },
+          { title: "MyGO!!!!! - 歩拾道", youtube: "https://www.youtube.com/watch?v=EEeYU4-dhZk" },
+          { title: "milet × MAN WITH A MISSION - コイコガレ", youtube: "https://www.youtube.com/watch?v=vZUyKVE9dus" },
+          { title: "JUDY AND MARY - そばかす", youtube: "https://www.youtube.com/watch?v=0DBkXcDU270" },
+          { title: "東京事変 - 閃光少女", youtube: "https://www.youtube.com/watch?v=5jsdarfpsLk" },
+          { title: "サンボマスター - 青春狂騒曲", youtube: "https://www.youtube.com/watch?v=B8TClXpFbC4" }
+        ]
+      },
+      {
+        id: 5,
+        name: "평균나이33세",
+        color: "linear-gradient(135deg, #43CEA2 0%, #185A9D 100%)",
+        description: "실제로 계산해보진 않았습니다",
+        members: [
+          { name: "최화랑", role: "보컬" },
+          { name: "김용성", role: "기타" },
+          { name: "윤기성", role: "기타" },
+          { name: "손임현", role: "기타" },
+          { name: "전현민", role: "베이스" },
+          { name: "이수미", role: "드럼" },
+          { name: "구경빈", role: "드럼" },
+          { name: "이수아", role: "키보드" }
+        ],
+        setlist: [
+          { title: "터치드 - 불시", youtube: "https://youtu.be/k-p1Wfk-HDs?si=oqxrN80DNsX9kH1Z" },
+          { title: "엔플라잉 - Flashback", youtube: "https://youtu.be/gBGns-ZgkCo?si=EfyBT4JOaFcylGx9" },
+          { title: "Official髭男dism - Pretender", youtube: "https://youtu.be/TQ8WlA2GXbk?si=OJX5mt-ulMA9TPJR" },
+          { title: "터치드 - Last Day", youtube: "https://youtu.be/i4ihwFkVAhU?si=fkSV8z-iNiyirpLs" },
+          { title: "데이식스 - 한 페이지가 될 수 있게", youtube: "https://youtu.be/vnS_jn2uibs?si=0L2bbuSl4nu2LiWC" },
+          { title: "전영호 - Butterfly", youtube: "https://youtu.be/5BONQ39cP9k?si=yIgPP1PH8zn8x8ey" }
+        ]
+      }
+    ]
   }
 };
 
