@@ -6,6 +6,7 @@ import './GigDetail.css';
 const GigDetail = () => {
   const { title } = useParams();
   const [isPosterLightboxOpen, setIsPosterLightboxOpen] = useState(false);
+  const [teamLightbox, setTeamLightbox] = useState(null);
 
   useEffect(() => {
     const decodedTitle = title ? decodeURIComponent(title) : '';
@@ -15,11 +16,14 @@ const GigDetail = () => {
 
   useEffect(() => {
     const handleEscKey = (e) => {
-      if (e.key === 'Escape') setIsPosterLightboxOpen(false);
+      if (e.key === 'Escape') {
+        setIsPosterLightboxOpen(false);
+        setTeamLightbox(null);
+      }
     };
-    if (isPosterLightboxOpen) document.addEventListener('keydown', handleEscKey);
+    if (isPosterLightboxOpen || teamLightbox) document.addEventListener('keydown', handleEscKey);
     return () => document.removeEventListener('keydown', handleEscKey);
-  }, [isPosterLightboxOpen]);
+  }, [isPosterLightboxOpen, teamLightbox]);
 
   const formatDate = (dateString) => {
     const dateOnly = dateString.split(' ')[0];
@@ -114,12 +118,20 @@ const GigDetail = () => {
         </div>
       )}
 
+      {/* Team Lightbox */}
+      {teamLightbox && teamLightbox.image && (
+        <div className="lightbox" onClick={() => setTeamLightbox(null)}>
+          <img src={teamLightbox.image} alt={teamLightbox.name} />
+          <button className="lightbox-close">✕</button>
+        </div>
+      )}
+
       {/* Teams */}
       <div className="teams">
         {gig.teams.map((team) => (
           <div key={team.id} className="team">
             <div className="team-header">
-              <div className="team-thumb">
+              <div className="team-thumb" onClick={() => team.image && setTeamLightbox(team)}>
                 {team.image ? (
                   <img src={team.image} alt={team.name} />
                 ) : (

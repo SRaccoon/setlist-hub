@@ -210,6 +210,12 @@
   border-radius: 14px;
   overflow: hidden;
   flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.team-thumb:hover {
+  transform: scale(1.08);
 }
 
 .team-thumb img {
