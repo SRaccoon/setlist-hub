@@ -5,13 +5,13 @@ const gigData = {
     date: "2025-08-30 18:00 ~ 20:30",
     venue: "신논현 펄스 라이브홀",
     venueLink: "https://naver.me/G4WoE9X7",
-    image: process.env.PUBLIC_URL + "/poster.png",
+    image: process.env.PUBLIC_URL + "/jangjangfestival/poster.png",
     description: "이 공연의 주제는 단 하나, 재밌으면 됐다!",
     teams: [
       {
         id: 1,
         name: "학사경고",
-        image: `${process.env.PUBLIC_URL}/학사경고.png`,
+        image: `${process.env.PUBLIC_URL}/jangjangfestival/학사경고.png`,
         description: "다른 밴드들이 사회의 쓴맛을 노래할 때, 우린 아직 학식의 쓴맛을 노래한다.",
         members: [
           { name: "이다은", role: "보컬" },
@@ -33,7 +33,7 @@ const gigData = {
       {
         id: 2,
         name: "퇴근인사",
-        image: `${process.env.PUBLIC_URL}/퇴근인사2.png`,
+        image: `${process.env.PUBLIC_URL}/jangjangfestival/퇴근인사2.png`,
         description: "하루의 마침표가 우리의 첫 소절이 되는 시간, 그 설렘을 연주하는 '퇴근인사'입니다",
         members: [
           { name: "고현민", role: "보컬" },
@@ -54,7 +54,7 @@ const gigData = {
       {
         id: 3,
         name: "적당한 밴드",
-        image: `${process.env.PUBLIC_URL}/적당한밴드.png`,
+        image: `${process.env.PUBLIC_URL}/jangjangfestival/적당한밴드.png`,
         description: "딱 좋은 온도, 적당한 밴드",
         members: [
           { name: "최윤서", role: "보컬" },
@@ -76,7 +76,7 @@ const gigData = {
       {
         id: 4,
         name: "옐로우치킨썸머",
-        image: process.env.PUBLIC_URL + "/ycs.png",
+        image: process.env.PUBLIC_URL + "/jangjangfestival/ycs.png",
         description: "고등학생부터 직장인까지, 서로 다른 일상을 노래하는 밴드 옐치썬",
         members: [
           { name: "황주현", role: "보컬" },
@@ -102,13 +102,13 @@ const gigData = {
     date: "2025-10-25 18:00 ~ 20:00",
     venue: "스페이스한강",
     venueLink: "https://naver.me/GpCzTDlp",
-    image: process.env.PUBLIC_URL + "/temperature.png",
+    image: process.env.PUBLIC_URL + "/temperature/temperature.png",
     description: "성급히 찾아온 겨울밤을 녹일 우리만의 온도",
     teams: [
       {
         id: 1,
         name: "주승오밴드",
-        image: `${process.env.PUBLIC_URL}/주승오밴드.png`,
+        image: `${process.env.PUBLIC_URL}/temperature/주승오밴드.png`,
         description: "밴드 리도어의 음악에 이끌려 결성된 커버밴드 주승오밴드 입니다.",
         members: [
           { name: "오승주", role: "보컬" },
@@ -130,7 +130,7 @@ const gigData = {
       {
         id: 2,
         name: "전갱이",
-        image: `${process.env.PUBLIC_URL}/전갱이.png`,
+        image: `${process.env.PUBLIC_URL}/temperature/전갱이.png`,
         description: "살아있을 때 손질하지 않으면 못 먹는 전갱이처럼 신선하고 날 것 그대로의 진정성 있는 음악을 보여주는 밴드입니다.",
         members: [
           { name: "양나빈", role: "보컬" },
@@ -152,7 +152,7 @@ const gigData = {
       {
         id: 3,
         name: "큰나무",
-        image: `${process.env.PUBLIC_URL}/큰나무.png`,
+        image: `${process.env.PUBLIC_URL}/temperature/큰나무.png`,
         description: "큰나무는 중학교 동창 다섯 명이 함께 결성한 밴드입니다. 학창시절 자주 만나던 장소 '큰나무'에서 이름을 따와, 그때의 추억과 우정을 음악으로 이어가고 있습니다. 계속 자라나는 나무처럼 꾸준히 함께 성장하고 싶은 밴드입니다.",
         members: [
           { name: "김태일", role: "보컬/리듬기타" },
@@ -178,13 +178,13 @@ const gigData = {
     date: "2026-02-28 18:00",
     venue: "락앤롤욱스",
     venueLink: "https://naver.me/GL8Zf6uF",
-    image: process.env.PUBLIC_URL + "/nexon-band.png",
+    image: process.env.PUBLIC_URL + "/letsrock/nexon-band.png",
     description: "5개 팀이 함께하는 넥슨밴드 연합공연",
     teams: [
       {
         id: 1,
         name: "멜랑꼴리",
-        image: `${process.env.PUBLIC_URL}/team-melancholy.svg`,
+        image: `${process.env.PUBLIC_URL}/letsrock/team-melancholy.svg`,
         description: "이름처럼 좀 축축한 노래들만 골라서 합니다",
         members: [
           { name: "정지민", role: "보컬" },
@@ -205,7 +205,7 @@ const gigData = {
       {
         id: 2,
         name: "조나단과 땡전들",
-        image: `${process.env.PUBLIC_URL}/team-jonathan.svg`,
+        image: `${process.env.PUBLIC_URL}/letsrock/team-jonathan.svg`,
         description: "조나단이 기타 치겠다는데 안 갈 수가 있나",
         members: [
           { name: "한재준", role: "보컬" },
@@ -227,7 +227,7 @@ const gigData = {
       {
         id: 3,
         name: "스킬트리",
-        image: `${process.env.PUBLIC_URL}/team-skilltree.svg`,
+        image: `${process.env.PUBLIC_URL}/letsrock/team-skilltree.svg`,
         description: "왁스에서 건즈앤로지스까지, 스킬 포인트 잘 찍었다",
         members: [
           { name: "강해린", role: "보컬" },
@@ -249,7 +249,7 @@ const gigData = {
       {
         id: 4,
         name: "아지캉플젝",
-        image: `${process.env.PUBLIC_URL}/team-akfg.png`,
+        image: `${process.env.PUBLIC_URL}/letsrock/team-akfg.png`,
         description: "인천에서 왔습니다",
         members: [
           { name: "양지민", role: "보컬" },
@@ -271,7 +271,7 @@ const gigData = {
       {
         id: 5,
         name: "전원참석",
-        image: `${process.env.PUBLIC_URL}/team-fullattend.svg`,
+        image: `${process.env.PUBLIC_URL}/letsrock/team-fullattend.svg`,
         description: "6명이 무대 올라가면 객석도 가만히 못 있더라",
         members: [
           { name: "김현수", role: "보컬" },
@@ -298,13 +298,13 @@ const gigData = {
     date: "2026-05-01 18:00",
     venue: "신논현 펄스 라이브홀",
     venueLink: "https://naver.me/G4WoE9X7",
-    image: process.env.PUBLIC_URL + "/spring-night.png",
+    image: process.env.PUBLIC_URL + "/springnight/spring-night.png",
     description: "일단 오면 됩니다. 노는 건 현장에서",
     teams: [
       {
         id: 1,
         name: "Mouse Cow",
-        image: `${process.env.PUBLIC_URL}/team-mousecow.png`,
+        image: `${process.env.PUBLIC_URL}/springnight/team-mousecow.png`,
         description: "쥐띠랑 소띠",
         members: [
           { name: "김현진", role: "보컬" },
@@ -366,24 +366,23 @@ const gigData = {
       {
         id: 4,
         name: "The Garbage Collectors",
-        color: "linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)",
-        description: "",
+        image: `${process.env.PUBLIC_URL}/springnight/team-garbage.jpg`,
+        description: "취향 쓰레기통",
         members: [
-          { name: "", role: "보컬" },
-          { name: "", role: "보컬" },
-          { name: "", role: "기타" },
-          { name: "", role: "기타" },
-          { name: "", role: "베이스" },
-          { name: "", role: "드럼" },
-          { name: "", role: "키보드" }
+          { name: "양은정", role: "보컬" },
+          { name: "김세진", role: "기타/보컬" },
+          { name: "유재효", role: "기타" },
+          { name: "김민규", role: "베이스/보컬" },
+          { name: "정준영", role: "키보드" },
+          { name: "도재형", role: "드럼" }
         ],
         setlist: [
-          { title: "ヨルシカ - 雨とカプチーノ", youtube: "https://www.youtube.com/watch?v=PWbRleMGagU" },
-          { title: "MyGO!!!!! - 歩拾道", youtube: "https://www.youtube.com/watch?v=EEeYU4-dhZk" },
-          { title: "milet × MAN WITH A MISSION - コイコガレ", youtube: "https://www.youtube.com/watch?v=vZUyKVE9dus" },
-          { title: "JUDY AND MARY - そばかす", youtube: "https://www.youtube.com/watch?v=0DBkXcDU270" },
-          { title: "東京事変 - 閃光少女", youtube: "https://www.youtube.com/watch?v=5jsdarfpsLk" },
-          { title: "サンボマスター - 青春狂騒曲", youtube: "https://www.youtube.com/watch?v=B8TClXpFbC4" }
+          { title: "ヨルシカ (요루시카) - 雨とカプチーノ (비와 카푸치노)", youtube: "https://www.youtube.com/watch?v=PWbRleMGagU" },
+          { title: "MyGO!!!!! - 歩拾道 (보습도)", youtube: "https://www.youtube.com/watch?v=EEeYU4-dhZk" },
+          { title: "milet × MAN WITH A MISSION - コイコガレ (코이코가레)", youtube: "https://www.youtube.com/watch?v=vZUyKVE9dus" },
+          { title: "JUDY AND MARY - そばかす (주근깨)", youtube: "https://www.youtube.com/watch?v=0DBkXcDU270" },
+          { title: "東京事変 (도쿄지헨) - 閃光少女 (섬광소녀)", youtube: "https://www.youtube.com/watch?v=5jsdarfpsLk" },
+          { title: "サンボマスター (삼보마스터) - 青春狂騒曲 (청춘광소곡)", youtube: "https://www.youtube.com/watch?v=B8TClXpFbC4" }
         ]
       },
       {
