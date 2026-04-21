@@ -20,10 +20,9 @@ const GigList = () => {
     return `${year}.${month}.${day} (${days[date.getDay()]})`;
   };
 
-  const gigs = Object.entries(gigData).map(([key, gig]) => ({
-    key,
-    ...gig,
-  }));
+  const gigs = Object.entries(gigData)
+    .map(([key, gig]) => ({ key, ...gig }))
+    .sort((a, b) => new Date(b.date.split(' ')[0]) - new Date(a.date.split(' ')[0]));
 
   return (
     <div className="gig-list">
