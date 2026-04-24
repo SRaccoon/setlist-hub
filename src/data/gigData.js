@@ -346,6 +346,7 @@ const gigData = {
       {
         id: 3,
         name: "Buy the Dip",
+        image: `${process.env.PUBLIC_URL}/springnight/team-buy.png`,
         color: "linear-gradient(135deg, #F5AF19 0%, #F12711 100%)",
         description: "이 팀 저점매수, 지금이 기회!",
         members: [
